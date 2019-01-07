@@ -17,12 +17,133 @@
         android:layout_margin="10dp"/>
 
     <HorizontalScrollView
-        android:id="@+id/topHorizantalView"
+        android:id="@+id/topHorizontalView"
         android:layout_below="@+id/topTextView"
+        android:scrollbars="none"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="60dp"
+           android:elevation="4dp"
+           android:background="@drawable/rounded_corner"
+           android:layout_margin="10dp">
+           <ImageView
+               android:id="@+id/burgerImg"
+               android:layout_width="40dp"
+               android:layout_height="match_parent"
+               android:src="@drawable/burger_img"/>
+           <TextView
+               android:id="@+id/burText"
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="10dp"
+               android:layout_toRightOf="@+id/burgerImg"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Tomorrow"/>
+           <TextView
+               android:layout_below="@+id/burText"
+               android:layout_toRightOf="@+id/burgerImg"
+               android:layout_margin="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Tomorrow is my day"/>
+       </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:elevation="4dp"
+                android:background="@drawable/rounded_corner">
+                <ImageView
+                    android:id="@+id/burger2Img"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/burger_img"/>
+                <TextView
+                    android:id="@+id/bur2Text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/burger2Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomorrow"/>
+                <TextView
+                    android:layout_below="@+id/bur2Text"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/burger2Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomorrow is my day"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:elevation="4dp"
+                android:background="@drawable/rounded_corner">
+                <ImageView
+                    android:id="@+id/burger3Img"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/burger_img"/>
+                <TextView
+                    android:id="@+id/bur3Text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/burger3Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomorrow"/>
+                <TextView
+                    android:layout_below="@+id/bur3Text"
+                    android:layout_toRightOf="@+id/burger3Img"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomorrow is my day"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topHorizontalView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Better Together"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/text2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/hotel3"/>
+            </FrameLayout>
+        </LinearLayout>
     </HorizontalScrollView>
 
 </RelativeLayout>
