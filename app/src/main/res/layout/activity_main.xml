@@ -1,278 +1,294 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/topTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Happening Near You"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_margin="10dp"/>
-
-    <HorizontalScrollView
-        android:id="@+id/topHorizontalView"
-        android:layout_below="@+id/topTextView"
-        android:scrollbars="none"
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".MainActivity">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/topTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Happening Near You"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/topHorizontalView"
+            android:layout_below="@+id/topTextView"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:elevation="4dp"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:id="@+id/burgerImg"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/burger_img"/>
+                    <TextView
+                        android:id="@+id/burText"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/burgerImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomorrow"/>
+                    <TextView
+                        android:layout_below="@+id/burText"
+                        android:layout_toRightOf="@+id/burgerImg"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomorrow is my day"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="4dp"
+                    android:background="@drawable/rounded_corner">
+                    <ImageView
+                        android:id="@+id/burger2Img"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/burger_img"/>
+                    <TextView
+                        android:id="@+id/bur2Text"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/burger2Img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomorrow"/>
+                    <TextView
+                        android:layout_below="@+id/bur2Text"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@+id/burger2Img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomorrow is my day"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:background="@drawable/rounded_corner">
+                    <ImageView
+                        android:id="@+id/burger3Img"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/burger_img"/>
+                    <TextView
+                        android:id="@+id/bur3Text"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/burger3Img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomorrow"/>
+                    <TextView
+                        android:layout_below="@+id/bur3Text"
+                        android:layout_toRightOf="@+id/burger3Img"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomorrow is my day"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/text2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-       <RelativeLayout
-           android:layout_width="wrap_content"
-           android:layout_height="60dp"
-           android:elevation="4dp"
-           android:background="@drawable/rounded_corner"
-           android:layout_margin="10dp">
-           <ImageView
-               android:id="@+id/burgerImg"
-               android:layout_width="40dp"
-               android:layout_height="match_parent"
-               android:src="@drawable/burger_img"/>
-           <TextView
-               android:id="@+id/burText"
-               android:layout_marginTop="5dp"
-               android:layout_marginLeft="10dp"
-               android:layout_toRightOf="@+id/burgerImg"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Tomorrow"/>
-           <TextView
-               android:layout_below="@+id/burText"
-               android:layout_toRightOf="@+id/burgerImg"
-               android:layout_margin="10dp"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Tomorrow is my day"/>
-       </RelativeLayout>
+            android:layout_below="@+id/topHorizontalView"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="Better Together"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:elevation="4dp"
-                android:background="@drawable/rounded_corner">
-                <ImageView
-                    android:id="@+id/burger2Img"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/burger_img"/>
-                <TextView
-                    android:id="@+id/bur2Text"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@+id/burger2Img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tomorrow"/>
-                <TextView
-                    android:layout_below="@+id/bur2Text"
-                    android:layout_margin="10dp"
-                    android:layout_toRightOf="@+id/burger2Img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tomorrow is my day"/>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_margin="10dp"
-                android:elevation="4dp"
-                android:background="@drawable/rounded_corner">
-                <ImageView
-                    android:id="@+id/burger3Img"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/burger_img"/>
-                <TextView
-                    android:id="@+id/bur3Text"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_toRightOf="@+id/burger3Img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tomorrow"/>
-                <TextView
-                    android:layout_below="@+id/bur3Text"
-                    android:layout_toRightOf="@+id/burger3Img"
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tomorrow is my day"/>
-            </RelativeLayout>
-        </LinearLayout>
-    </HorizontalScrollView>
-
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/topHorizontalView"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="10dp"
-        android:text="Better Together"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
-
-    <HorizontalScrollView
-        android:id="@+id/midHorizontalView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none"
-        android:layout_below="@+id/text2">
-        <LinearLayout
+        <HorizontalScrollView
+            android:id="@+id/midHorizontalView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
-            <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="10dp">
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp">
                     <ImageView
                         android:id="@+id/image1"
                         android:layout_width="match_parent"
                         android:layout_height="130dp"
-                        android:src="@drawable/hotel3"
                         android:background="@drawable/rounded_corner"
-                        android:scaleType="fitXY"/>
-                <TextView
-                    android:layout_below="@+id/image1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Lake Palace"
-                    android:textStyle="bold"/>
-            </RelativeLayout>
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel3" />
 
-            <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="10dp">
-                <ImageView
-                    android:id="@+id/image2"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:src="@drawable/hotel1"
-                    android:background="@drawable/rounded_corner"
-                    android:scaleType="fitXY"/>
-                <TextView
-                    android:layout_below="@+id/image2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="City Palace"
-                    android:textStyle="bold"/>
-            </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/image1"
+                        android:text="Lake Palace"
+                        android:textStyle="bold" />
+                </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="10dp">
-                <ImageView
-                    android:id="@+id/image3"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:src="@drawable/hotel3"
-                    android:background="@drawable/rounded_corner"
-                    android:scaleType="fitXY"/>
-                <TextView
-                    android:layout_below="@+id/image3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Udai Vilas"
-                    android:textStyle="bold"/>
-            </RelativeLayout>
-        </LinearLayout>
-    </HorizontalScrollView>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp">
 
-    <TextView
-        android:id="@+id/bottomText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/midHorizontalView"
-        android:text="Go Out"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="10dp"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:background="@drawable/rounded_corner"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
 
-    <HorizontalScrollView
-        android:layout_below="@+id/bottomText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none"
-        android:id="@+id/bottomHorizontalView">
-        <LinearLayout
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/image2"
+                        android:text="City Palace"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:background="@drawable/rounded_corner"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/image3"
+                        android:text="Udai Vilas"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/bottomText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-            <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="10dp">
-                <ImageView
-                    android:id="@+id/pizza"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:src="@drawable/pizza"
-                    android:background="@drawable/rounded_corner"
-                    android:scaleType="fitXY"/>
-                <TextView
-                    android:layout_below="@+id/pizza"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Pizza"
-                    android:textStyle="bold"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="10dp">
-                <ImageView
-                    android:id="@+id/pasta"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:src="@drawable/pasta"
-                    android:background="@drawable/rounded_corner"
-                    android:scaleType="fitXY"/>
-                <TextView
-                    android:layout_below="@+id/pasta"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Pasta"
-                    android:textStyle="bold"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="10dp">
-                <ImageView
-                    android:id="@+id/maggi"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:src="@drawable/maggi"
-                    android:background="@drawable/rounded_corner"
-                    android:scaleType="fitXY"/>
-                <TextView
-                    android:layout_below="@+id/maggi"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Maggi"
-                    android:textStyle="bold"/>
-            </RelativeLayout>
-        </LinearLayout>
-    </HorizontalScrollView>
+            android:layout_below="@+id/midHorizontalView"
+            android:text="Go Out"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
-</RelativeLayout>
+        <HorizontalScrollView
+            android:layout_below="@+id/bottomText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:id="@+id/bottomHorizontalView">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:id="@+id/pizza"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:src="@drawable/pizza"
+                        android:background="@drawable/rounded_corner"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_below="@+id/pizza"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pizza"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:id="@+id/pasta"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:src="@drawable/pasta"
+                        android:background="@drawable/rounded_corner"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_below="@+id/pasta"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pasta"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:id="@+id/maggi"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:src="@drawable/maggi"
+                        android:background="@drawable/rounded_corner"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_below="@+id/maggi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Maggi"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <android.support.design.widget.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"/>
+    </RelativeLayout>

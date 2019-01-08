@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/alarm2"
+        android:icon="@drawable/ic_access_time_black_24dp"
+        android:title="alarm"/>
+
+
+    <item
+        android:id="@+id/adjust"
+        android:icon="@drawable/ic_adjust_black_24dp"
+        android:title="adjust"/>
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="home"/>
+
+    <item
+        android:id="@+id/alarm"
+        android:icon="@drawable/ic_access_time_black_24dp"
+        android:title="alarm"/>
+
+    <item
+        android:id="@+id/adjust2"
+        android:icon="@drawable/ic_adjust_black_24dp"
+        android:title="adjust"/>
+
+</menu>
