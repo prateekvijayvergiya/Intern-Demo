@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
@@ -119,30 +120,158 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/topHorizontalView"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="10dp"
         android:text="Better Together"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
     <HorizontalScrollView
+        android:id="@+id/midHorizontalView"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:scrollbars="none"
         android:layout_below="@+id/text2">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <FrameLayout
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
                 android:layout_width="150dp"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:src="@drawable/hotel3"
+                        android:background="@drawable/rounded_corner"
+                        android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_below="@+id/image1"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/hotel3"/>
-            </FrameLayout>
+                    android:text="Lake Palace"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:src="@drawable/hotel1"
+                    android:background="@drawable/rounded_corner"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_below="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="City Palace"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:src="@drawable/hotel3"
+                    android:background="@drawable/rounded_corner"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_below="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Udai Vilas"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/bottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/midHorizontalView"
+        android:text="Go Out"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_below="@+id/bottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/bottomHorizontalView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/pizza"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:src="@drawable/pizza"
+                    android:background="@drawable/rounded_corner"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_below="@+id/pizza"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pizza"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/pasta"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:src="@drawable/pasta"
+                    android:background="@drawable/rounded_corner"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_below="@+id/pasta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pasta"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/maggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:src="@drawable/maggi"
+                    android:background="@drawable/rounded_corner"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_below="@+id/maggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Maggi"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
         </LinearLayout>
     </HorizontalScrollView>
 
